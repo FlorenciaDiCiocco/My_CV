@@ -59,6 +59,7 @@ body {
   margin: 0;
   float: right;
   display: block;
+
 }
 
 
@@ -70,7 +71,7 @@ header{
 
 .foto {
   position: absolute;
-	top: 0px;
+	top: 10px;
 	left: 40px;
   padding-left: 20px;
 }
