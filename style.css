@@ -145,7 +145,7 @@ main img {
 }
 
 /*EDUCACION*/
-.edu {
+.edu , .Referencias{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -153,11 +153,11 @@ main img {
   padding-left: 20px;
 }
 
-.edu p{
+.edu p, .Referencias p{
   margin: 2px;
 }
 
-.edu .subsection{
+.edu .subsection, .Referencias .subsection{
   margin-bottom: 10px;
 }
 
@@ -205,6 +205,10 @@ main img {
 
 #Experiencia{
   padding-top: 15px;
+}
+
+.Referencias{
+  padding-left: 0;
 }
 
 /*footer*/
