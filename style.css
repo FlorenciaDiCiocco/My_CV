@@ -1,0 +1,212 @@
+/*fuentes*/
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+h1{
+  font-family: 'Alex Brush', cursive;
+  font-size: 80px;
+  font-weight: 500;
+  margin-bottom: -30px;
+  padding-bottom: 0;
+}
+h3{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-bottom: 3px grey solid;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+a{
+  
+  color: black;
+}
+
+a:hover{
+  font-size: larger;
+  font-style: italic;
+}
+
+/* NAVBAR*/
+body {margin:0;}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar a, .navbar p {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+.navbar p{
+  margin: 0;
+  float: right;
+  display: block;
+}
+
+
+/*header*/
+header{
+  margin-top: 50PX;
+  height: 250px;
+}
+
+.foto {
+  position: absolute;
+	top: 0px;
+	left: 40px;
+  padding-left: 20px;
+}
+.foto img {
+  max-width: 250px;
+  clip-path: circle(41.8% at 50% 50%);
+}
+.nombre {
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-top: 30PX;
+}
+
+.rosa {
+  background-color: #e7a9a7;
+  text-align: center;
+  margin-top: 0;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+  font-weight: 300;
+
+}
+
+
+/* Cuerpo principal */
+main {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 0px 0px;
+  grid-template-areas: "izq der";
+}
+
+.izquierda {
+  width: 100%;
+  padding: 20px;
+  grid-area: izq;
+  padding-right: 10px;
+}
+
+.derecha {
+  width: 100%;
+  background-color: tan;
+  padding: 10px;
+  grid-area: der;
+  
+}
+
+main img {
+  width: 30px;
+  padding-right: 5px;
+  vertical-align:middle;
+}
+
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+}
+
+.contacto p{
+  display: inline;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.contacto a{
+  margin-top: 0;
+  
+}
+.subsection{
+  padding-bottom: 10px;
+}
+
+/*EDUCACION*/
+.edu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.edu p{
+  margin: 2px;
+}
+
+.edu .subsection{
+  margin-bottom: 10px;
+}
+
+/*SKILLS*/
+
+.Habilidades{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0px 25px;
+  padding-left: 20px;
+}
+
+.Habilidades p{
+  margin-top: 0;
+}
+
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+.green{
+  background-color: #e7a9a7;
+}
+
+/*footer*/
+footer{
+  background-color: #333;
+  color: white;
+  padding: 10px;
+
+}
+
+footer a{
+  color: #f2f2f2;
+  text-decoration: none;
+}  
+
+footer a:hover {
+  background: #ddd;
+  color: black;
+  padding: 10px;
+  font-size: larger;
+}
