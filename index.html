@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -8,6 +8,8 @@
   <meta name="description"
     content="I aim to be a full stack developer. I hope this page can show what I've learned by myself and at BYU Idaho in just one year">
   <link rel="stylesheet" href="style.css">
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="java.js"></script>
 
 </head>
@@ -15,16 +17,25 @@
 <body>
 
   <header>
-    <div class="navbar">
-      <a href="#">Inicio</a>
-      <a href="#Contacto">Contacto</a>
-      <a href="#Educacion">Educación</a>
-      <a href="#Skills">Skills</a>
-      <a href="#Perfil">Perfil</a>
-      <a href="#Experiencia">Experiencia</a>
-      <a href="#Idiomas">Idiomas</a>
-      <a href="#Referencias">Referencias</a>
-      <p id="my_name" style="visibility: hidden;">Florencia Di Ciocco</p>
+    <div class="navbar topnav">
+      <p id="my_name" style="display: none;">Florencia Di Ciocco</p>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" id="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a><br>
+      <div id="myLinks">
+
+        <a href="#">Inicio</a>
+        <a href="#Contacto">Contacto</a>
+        <a href="#Educacion">Educación</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Perfil">Perfil</a>
+        <a href="#Experiencia">Experiencia</a>
+        <a href="#Idiomas">Idiomas</a>
+        <a href="#Referencias">Referencias</a>
+      </div>
+
+
     </div>
     <div class="foto">
       <img src="imagenes/foto_de_perfil.jpg" alt="foto de perfil de Florencia Di Ciocco">
@@ -89,6 +100,7 @@
           <p>2008-2009 (Abandonada)</p>
         </div>
       </div>
+
       <h3 id="Skills">Skills y Herramientas</h3>
       <div class="Habilidades">
         <p>Html</p>
@@ -209,6 +221,7 @@
           <span class="dot color"></span>
         </div>
       </div>
+
       <h3 id="Idiomas">Idiomas</h3>
       <div class="Habilidades">
         <p>Español</p>
@@ -252,28 +265,40 @@
         <p> Personalmente valoro la puntualidad, la búsqueda de la mejor situación alcanzable y el multitasking
           eficiente en mis pares y particularmente en mi.</p>
       </div>
+
       <h3 id="Experiencia" class="Experiencia">Experiencia</h3>
       <div class="subsection">
         <p><strong>Softvision/Senior QA Engineer</strong> Abr/19 - Actual</p>
-        <p>Tareas: Seguimiento de las mejoras en el software de Firefox, ejecutar casos de prueba web sobre la última versión de Firefox en distintos OS, verificar bugs reportados por los usuarios, clasificarlos y derivarlos al dev correspondientes, atención al usuario final y mantener conversación fluida con el QA team de Rumania.</p>
+        <p>Tareas: Seguimiento de las mejoras en el software de Firefox, ejecutar casos de prueba web sobre la última
+          versión de Firefox en distintos OS, verificar bugs reportados por los usuarios, clasificarlos y derivarlos al
+          dev correspondientes, atención al usuario final y mantener conversación fluida con el QA team de Rumania.</p>
       </div>
       <div class="subsection">
         <p><strong>Atos/ Analista Semi Sr. de QA</strong> Jun/16 - Abril/2019</p>
-        <p>Tareas: Administración, distribución y control de tareas realizadas dentro del equipo de trabajo a modo de lograr las metas fijadas en el tiempo dado. Paralelamente, capacitación a los miembros del equipo para que puedan desempeñar mejor sus tareas de QA.<br>
-          Asesoría al usuario y gerentes del funcionamiento de la herramienta y capacitaciones sobre el manejo de las nuevas herramientas testeadas por el equipo.<br>
-          También el análisis de documentación, desarrollo de lista de casos, detección de errores en el software y su causa, reporte al equipo responsable del error y seguimiento del mismo hasta su resolución.
-          Trabaje en la migración del software del tasador hacia Huawei. Adicionalmente trabaje en el nuevo CRM proporcionado por Salesforce.</p>
+        <p>Tareas: Administración, distribución y control de tareas realizadas dentro del equipo de trabajo a modo de
+          lograr las metas fijadas en el tiempo dado. Paralelamente, capacitación a los miembros del equipo para que
+          puedan desempeñar mejor sus tareas de QA.<br>
+          Asesoría al usuario y gerentes del funcionamiento de la herramienta y capacitaciones sobre el manejo de las
+          nuevas herramientas testeadas por el equipo.<br>
+          También el análisis de documentación, desarrollo de lista de casos, detección de errores en el software y su
+          causa, reporte al equipo responsable del error y seguimiento del mismo hasta su resolución.
+          Trabaje en la migración del software del tasador hacia Huawei. Adicionalmente trabaje en el nuevo CRM
+          proporcionado por Salesforce.</p>
       </div>
       <div class="subsection">
         <p><strong>Accenture / Analista de QA</strong> Dic/13 – Jun/16</p>
-        <p>Tareas: Análisis de documentación, desarrollo de lista de casos a ser testeados, control de lista de casos, instalación de software, detección de errores en el software y su causa, reporte de errores, test integrado del software, administración, distribución y control de tareas realizadas dentro del sistema.</p>
+        <p>Tareas: Análisis de documentación, desarrollo de lista de casos a ser testeados, control de lista de casos,
+          instalación de software, detección de errores en el software y su causa, reporte de errores, test integrado
+          del software, administración, distribución y control de tareas realizadas dentro del sistema.</p>
       </div>
       <div class="subsection">
         <p><strong>Veikko/ Encargada de turno</strong> Dic/10 – Nov/13</p>
-        <p>Tareas: Pago a proveedores, atención al cliente, supervisión de tareas de personal front y backoffice. Asegurarme que las tareas del día se cumplan, que el cliente este satisfecho, asignar tareas al personal a mi cargo, recepción y derivación de llamadas, atención del cliente y provedores.</p>
+        <p>Tareas: Pago a proveedores, atención al cliente, supervisión de tareas de personal front y backoffice.
+          Asegurarme que las tareas del día se cumplan, que el cliente este satisfecho, asignar tareas al personal a mi
+          cargo, recepción y derivación de llamadas, atención del cliente y provedores.</p>
       </div>
 
-      
+
       <h3 id="Referencias">Referencias</h3>
       <div class="Referencias">
         <div class="subsection">
@@ -296,12 +321,13 @@
           <p>Relación: Esposo y socio</p>
           <p>Contacto: 011 15 6565-5120</p>
         </div>
+      </div>
+    </div>
   </main>
-
+  <footer>
+    <a href="https://i.pinimg.com/originals/be/de/3f/bede3f63a0b569dcdfa6d2f6cb799437.png" target="blank">Diseño en el que me base</a>
+  </footer>
 </body>
-<footer>
-  <a href="https://i.pinimg.com/originals/be/de/3f/bede3f63a0b569dcdfa6d2f6cb799437.png" target="blank">Diseño en el que
-    me base</a>
-</footer>
+
 
 </html>

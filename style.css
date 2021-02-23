@@ -1,14 +1,14 @@
 /*fuentes*/
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
-h1{
-  font-family: 'Alex Brush', cursive;
+h1 {
+  font-family: "Alex Brush", cursive;
   font-size: 80px;
   font-weight: 500;
   margin-bottom: -30px;
   padding-bottom: 0;
 }
-h3{
+h3 {
   text-transform: uppercase;
   letter-spacing: 3px;
   border-bottom: 3px grey solid;
@@ -16,18 +16,18 @@ h3{
   margin-right: 10px;
 }
 
-a{
-   color: black;
+a {
+  color: black;
 }
 
-a:hover{
+a:hover {
   font-size: larger;
   font-style: italic;
 }
 
 /* NAVBAR*/
 body {
-  margin:0;
+  margin: 0;
 }
 
 .navbar {
@@ -39,7 +39,11 @@ body {
   z-index: 1;
 }
 
-.navbar a, .navbar p {
+#myLinks {
+  float: right;
+}
+.navbar a,
+.navbar p {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -47,7 +51,6 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  
 }
 
 .navbar a:hover {
@@ -55,24 +58,22 @@ body {
   color: black;
 }
 
-.navbar p{
+.navbar p {
   margin: 0;
-  float: right;
+  float: left;
   display: block;
-
 }
 
-
 /*header*/
-header{
-  margin-top: 50PX;
+header {
+  margin-top: 50px;
   height: 250px;
 }
 
 .foto {
   position: absolute;
-	top: 10px;
-	left: 40px;
+  top: 10px;
+  left: 40px;
   padding-left: 20px;
 }
 .foto img {
@@ -83,7 +84,7 @@ header{
   text-align: center;
   padding-bottom: 0;
   margin-bottom: 0;
-  padding-top: 30PX;
+  padding-top: 30px;
 }
 
 .rosa {
@@ -96,9 +97,7 @@ header{
   letter-spacing: 3px;
   word-spacing: 3px;
   font-weight: 300;
-
 }
-
 
 /* Cuerpo principal */
 
@@ -116,12 +115,10 @@ main {
   padding: 20px;
 }
 
-
-
 main img {
   width: 30px;
   padding-right: 5px;
-  vertical-align:middle;
+  vertical-align: middle;
 }
 
 .contacto {
@@ -131,22 +128,22 @@ main img {
   padding-left: 20px;
 }
 
-.contacto p{
+.contacto p {
   display: inline;
   margin-top: 0;
   padding-top: 0;
 }
 
-.contacto a{
+.contacto a {
   margin-top: 0;
-  
 }
-.subsection{
+.subsection {
   padding-bottom: 10px;
 }
 
 /*EDUCACION*/
-.edu , .Referencias{
+.edu,
+.Referencias {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -154,28 +151,30 @@ main img {
   padding-left: 20px;
 }
 
-.edu p, .Referencias p{
+.edu p,
+.Referencias p {
   margin: 2px;
 }
 
-.edu .subsection, .Referencias .subsection{
+.edu .subsection,
+.Referencias .subsection {
   margin-bottom: 10px;
 }
 
-.edu a{
+.edu a {
   font-weight: bold;
 }
 
 /*SKILLS*/
 
-.Habilidades{
+.Habilidades {
   display: grid;
   grid-template-columns: 125px 1fr;
   gap: 0px 25px;
   padding-left: 20px;
 }
 
-.Habilidades p{
+.Habilidades p {
   margin-top: 0;
 }
 
@@ -185,13 +184,11 @@ main img {
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  
 }
 
-.color{
+.color {
   background-color: #e7a9a7;
 }
-
 
 /*DERECHA*/
 .derecha {
@@ -200,30 +197,29 @@ main img {
   grid-area: der;
 }
 
-.derecha p{
-  padding-left:20px ;
+.derecha p {
+  padding-left: 20px;
 }
 
-#Experiencia{
+#Experiencia {
   padding-top: 15px;
 }
 
-.Referencias{
+.Referencias {
   padding-left: 0;
 }
 
 /*footer*/
-footer{
+footer {
   background-color: #333;
   color: white;
   padding: 10px;
-
 }
 
-footer a{
+footer a {
   color: #f2f2f2;
   text-decoration: none;
-}  
+}
 
 footer a:hover {
   background: #ddd;
@@ -232,4 +228,94 @@ footer a:hover {
   font-size: larger;
 }
 
+#icon {
+  visibility: hidden;
+}
 
+.topnav #myLinks {
+  display: inline;
+}
+
+@media screen and (max-width: 1200px) {
+  h1,
+  .rosa {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  .topnav #myLinks {
+    display: inline;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  h1 {
+    font-size: 50px;
+    margin-bottom: -20px;
+  }
+  h2 {
+    font-size: larger;
+  }
+
+  .foto img {
+    max-width: 200px;
+  }
+
+  .foto {
+    top: 30px;
+  }
+
+  #icon {
+    visibility: visible;
+  }
+
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+
+  .navbar a {
+    display: flex;
+    flex-direction: column;
+    float: none;
+  }
+
+  #icon {
+    float: right;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px 0px;
+    grid-template-areas: "izq" 
+    "der";
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .foto {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin:0 ;
+    height: auto;
+  }
+
+  .nombre{
+    padding-top: 0ch;
+    margin-top: 0;
+  }
+
+  .izquierda{
+    margin-top: 30px;
+  }
+
+  #Contacto{
+    padding-top: 100px;
+  }
+}
